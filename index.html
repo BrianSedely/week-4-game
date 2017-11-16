@@ -1,0 +1,93 @@
+<html lang="en-us">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Football Game</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container">
+            <div class="row"></div>
+            <h3 class="col-xs-3 text-left">Click a Football to Play...</h3>
+            <h1 id="message" class="col-xs-6 text-center"></h1>
+            <h3 class="col-xs-3 text-right">...But Don't Go Over the Score!</h3>
+        </div>
+    </nav>
+    <div class="jumbotron jt">
+        <div class="row">
+            <div class="col-xs-4">
+                <h2 class="text-center font-weight-bold">Current Score: </h2>
+                <h1 id="playerScore" class="text-center"></h1>
+            </div>
+            <div class="col-xs-4">
+                <h2 class="text-center font-weight-bold">Score to Hit: </h2>
+                <h1 id="goalScore" class="text-center"></h1>
+            </div>
+            <div class="col-xs-4">
+                <div class="row">
+                    <h2 class="col-xs-6 text-right">Wins: </h2>
+                    <h1 id="wins" class="col-xs-6"></h1>
+                </div>
+                <div class="row">
+                    <h2 class="col-xs-6 text-right">Losses: </h2>
+                    <h1 id="losses" class="col-xs-6"></h1>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="container-fluid bg">
+        <div class="row">
+
+        </div>
+        <div class="row" id="regPoints">
+            <div class="col-xs-1"> </div>
+            <div class="col-xs-2">
+                <button id="btnFB1" class="fbpic"></button>
+            </div>
+
+            <div class="col-xs-2"> </div>
+            <div class="col-xs-2">
+                <button id="btnFB2" class="fbpic"></button>
+            </div>
+
+            <div class="col-xs-2"> </div>
+            <div class="col-xs-2">
+                <button id="btnFB3" class="fbpic"></button>
+            </div>
+            <div class="col-xs-1"> </div>
+        </div>
+        <div class="row" id="extraPoints">
+            <div class="col-xs-1"> </div>
+            <div class="col-xs-2">
+                <button id="btnFB4" class="fbpic"></button>
+            </div>
+
+            <div class="col-xs-2"> </div>
+            <div class="col-xs-2">
+                <button id="btnFB5" class="fbpic"></button>
+            </div>
+
+            <div class="col-xs-2"> </div>
+            <div class="col-xs-2">
+                <button id="btnFB6" class="fbpic"></button>
+            </div>
+            <div class="col-xs-1"> </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
