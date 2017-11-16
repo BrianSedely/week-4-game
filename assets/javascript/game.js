@@ -31,6 +31,7 @@ $(document).ready(function () {
             losses++;
             $("#losses").text(losses);
             reset();
+            return false;
         }
     }
 
@@ -55,6 +56,7 @@ $(document).ready(function () {
 
         //hide the (0,1,2) footballs, show the (2,3,6)
         $("#extraPoints").hide();
+
         $("#regPoints").show();
     };
 
@@ -146,9 +148,11 @@ $(document).ready(function () {
         won();
         loss();
         $("#message").text(b).addClass("score");
+
         if (a == 6) {
             $("#extraPoints").show();
             $("#regPoints").hide();
+
         }
     }
     //calling fx fbRegSet when a btn is clicked
@@ -193,6 +197,14 @@ $(document).ready(function () {
     var reset = function () {
         updateFBValues();
         updateGoalScore();
+        //array for possible regular points
+        fbPoints = [2, 3, 6];
+        fbGoals = ["SAFETY", "FIELD GOAL", "TOUCHDOWN!"];
+
+        //array for extra points
+        fbExtraPoints = [0, 1, 2];
+        fbExtraGoals = ["MISSED POINT AFTER", "KICK IS GOOD!", "2 POINT CONVERSION"]
+
     };
     reset();
 
